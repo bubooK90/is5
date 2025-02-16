@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import Masonry from "react-masonry-css";
 
-const MAX_PAGES = 6; // 设置最大页面数常量
+const MAX_PAGES = 7; // 设置最大页面数常量
 
 interface Item {
   jobid: string;
