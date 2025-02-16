@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import Masonry from "react-masonry-css";
 
-const MAX_PAGES = 7; // 设置最大页面数常量
+const MAX_PAGES = 8; // 设置最大页面数常量
 
 interface Item {
   jobid: string;
@@ -60,7 +60,8 @@ export default function Home() {
     <main className="py-5 px-5 sm:px-10 md:px-15 lg:px-20">
       <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
         <div key="intelli.show" className='p-5 bg-stone-900/80 text-stone-100/80 rounded-lg'>
-          <div className='mt-2 mb-20 text-xl font-bold'>imagined: <span className='text-stone-100/50'>reality</span></div>
+          <div className='mt-2 text-xl font-bold'>imagined: <span className='text-stone-100/50'>reality</span></div>
+          <div className='mb-20 text-xs text-stone-100/30'>niji・journey</div>
           <div className='text-right text-xs text-stone-100/30'>kevin.p.gao@gmail.com</div>
         </div>
         {items.map((item, index) => {
