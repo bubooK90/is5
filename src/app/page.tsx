@@ -6,7 +6,7 @@ import Masonry from "react-masonry-css";
 const MAX_PAGES = 6; // 设置最大页面数常量
 
 export default function Home() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<any[]>([]);
   const [page, setPage] = useState(MAX_PAGES);
   const [hasMore, setHasMore] = useState(true);
   const [selectedItem, setSelectedItem] = useState(null);
