@@ -67,7 +67,7 @@ export default function Home() {
         {items.map((item, index) => {
           if (index === items.length - 1) {
             return (
-              <div ref={lastItemRef} key={index} onClick={() => handleCardClick(item)}>
+              <div className='bg-stone-900/10' ref={lastItemRef} key={index} onClick={() => handleCardClick(item)}>
                 <img
                   className="lazy rounded-lg cursor-pointer"
                   src={`https://cdn.midjourney.com/${item.jobid}/${item.index}.png`}
@@ -78,7 +78,7 @@ export default function Home() {
             );
           } else {
             return (
-              <div key={index} onClick={() => handleCardClick(item)}>
+              <div className='bg-stone-900/10' key={index} onClick={() => handleCardClick(item)}>
                 <img
                   className="lazy rounded-lg cursor-pointer"
                   src={`https://cdn.midjourney.com/${item.jobid}/${item.index}.png`}
